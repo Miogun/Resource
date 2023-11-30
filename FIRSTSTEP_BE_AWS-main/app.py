@@ -13,7 +13,7 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # 데이터 베이스 연결
 # Mysql DB 서버의 주소
 def getCon():
-  return pymysql.connect(host="mysql-database-smh.cuoqltr5hz1r.ap-northeast-2.rds.amazonaws.com", 
+  return pymysql.connect(host="smhrds.cuoqltr5hz1r.ap-northeast-2.rds.amazonaws.com", 
                      user="admin", password="password", 
                      db="firststep",
                      charset="utf8",
